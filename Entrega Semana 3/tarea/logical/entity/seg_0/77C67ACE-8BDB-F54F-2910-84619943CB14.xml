@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="77C67ACE-8BDB-F54F-2910-84619943CB14" name="PRACTICANTE">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 03:07:45 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>A559EB70-F1F2-4157-FBFC-982789652812</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="compensacion" id="B8FAB613-13DC-118D-751B-896B92810AF8">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 03:09:53 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="genero" id="F8BEDA0E-3684-5E49-978E-4531467EC245">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 03:10:28 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo" id="4A7342EE-7FEB-B06A-735C-C24BA2A82C43">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-25 21:17:37 UTC</createdTime>
+<generatorID>BEA05C16-9FF9-A430-2DC8-6A332CE3A7AE</generatorID>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>FB5EDF66-DA1D-1129-7D65-C5072FBEAD5F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

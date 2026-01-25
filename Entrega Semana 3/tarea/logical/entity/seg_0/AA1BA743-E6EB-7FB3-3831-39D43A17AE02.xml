@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AA1BA743-E6EB-7FB3-3831-39D43A17AE02" name="TRABAJADOR">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 02:25:46 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rut" id="B95B9540-FE76-580D-A0A8-F9FBE6481CAE">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 02:48:58 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="34B62B62-B511-472D-A6B3-E596D8A283BF">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 02:50:00 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_nacimiento" id="4103D2FD-30F7-6302-9B68-E74C6AFCC5CA">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 03:05:39 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C7887684-F8C8-40C6-030A-122B92575CC6" name="TRABAJADOR PK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 02:49:57 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B95B9540-FE76-580D-A0A8-F9FBE6481CAE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

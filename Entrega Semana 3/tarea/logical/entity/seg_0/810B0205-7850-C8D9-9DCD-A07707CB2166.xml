@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="810B0205-7850-C8D9-9DCD-A07707CB2166" name="INDEFINIDO">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 03:11:25 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>A559EB70-F1F2-4157-FBFC-982789652812</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="sueldo_base" id="906CEA76-3A9A-0489-1208-B9DDC6D63AAD">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 03:11:38 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="afp" id="220F181F-106E-2A51-B9D5-A59512557279">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 03:11:57 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sistema_salud" id="8B34442F-8C2B-AD39-F255-3E95AFE18869">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 03:12:14 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="genero" id="FF5F9BA7-3EFD-514E-0F3E-D1F515F5F5D9">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 03:12:39 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo" id="DBF852F6-301C-381D-8F67-EFCA6DA318FF">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-23 02:59:08 UTC</createdTime>
+<generatorID>46C07682-C038-CA79-A547-469162094643</generatorID>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<referedAttribute>FB5EDF66-DA1D-1129-7D65-C5072FBEAD5F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

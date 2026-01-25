@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7A689E4F-33EB-ADB4-9215-A83E6F962F4C" name="PRODUCTO">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 02:14:47 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigo" id="2FEFA7C7-0BFC-1071-C426-7F50EF556E24">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 02:15:00 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="marca_producto" id="33E61E79-F384-B423-F1FE-DD76860AEA30">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 02:15:25 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valor" id="B37023A6-CB5E-7108-2ABC-706BB3D2DE76">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 02:15:56 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>2000</beginValue>
+<endValue>5000000</endValue>
+<description>valor unitario</description>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="descripcion" id="669F0371-0250-F911-E938-A9C2CAE5215F">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 02:17:21 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2CC4FE27-75F0-61F9-B5A5-B269677227A4" name="PRODUCTO PK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 02:15:10 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2FEFA7C7-0BFC-1071-C426-7F50EF556E24</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

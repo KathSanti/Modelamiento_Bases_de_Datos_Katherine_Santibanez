@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_12" directorySegmentName="seg_0" id="51D42FAF-1121-2425-E668-5B0390978CC7">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-23 02:41:45 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<sourcePk>507DCCB4-6B2B-F197-DB54-AF964D478A82</sourcePk>
+<targetPk>A5EB15D3-4052-C769-A36F-26A45F9AA1BA</targetPk>
+<identifying>false</identifying>
+<nameOnSource>asociado</nameOnSource>
+<nameOnTarget>contiene</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>A559EB70-F1F2-4157-FBFC-982789652812</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>C82B7E97-8F5C-B7B2-B224-B07B4E6529D9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="direccion" id="333557E7-2975-4B73-12BE-978E88AB81C4">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-24 19:35:02 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

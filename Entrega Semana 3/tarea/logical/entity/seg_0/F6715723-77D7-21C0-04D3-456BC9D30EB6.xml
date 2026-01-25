@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F6715723-77D7-21C0-04D3-456BC9D30EB6" name="STOCK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-25 06:22:30 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cantiad" id="3F9E8534-5677-702F-00F0-3D9D3A2E2D4E">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-25 06:54:46 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="3CEA8B34-1A36-FD97-BA73-C3A8995F73E1">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-25 06:56:24 UTC</createdTime>
+<generatorID>E1E5EAA4-B70F-DB4E-79BA-EF091950E8D3</generatorID>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<referedAttribute>538FEF0B-B377-76BD-F621-F730BA7ED7AB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="número_sucursal" id="28069CED-A13D-F1C0-F3DB-3EA14298ADE1">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-25 06:56:24 UTC</createdTime>
+<generatorID>E1E5EAA4-B70F-DB4E-79BA-EF091950E8D3</generatorID>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<referedAttribute>59EB0D77-A54D-04A7-F145-A05A8E90351F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo" id="A08ACF16-3C88-84AB-3F99-9FDECA156C6A">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-25 06:56:34 UTC</createdTime>
+<generatorID>A3B053F2-6D21-8A0D-CA69-4C131B658EE8</generatorID>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<referedAttribute>2FEFA7C7-0BFC-1071-C426-7F50EF556E24</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="35D5986D-D6D5-65F7-DC89-164D1036073C" name="BODEGA PK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-25 06:36:27 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+</identifiers>
+</Entity>

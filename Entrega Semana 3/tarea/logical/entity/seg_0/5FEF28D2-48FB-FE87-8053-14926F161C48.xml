@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5FEF28D2-48FB-FE87-8053-14926F161C48" name="BOLETA">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 03:19:38 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="numero" id="8DA3E116-1E90-8817-9AAE-08F0AA010FDD">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 03:19:50 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_emision" id="55C663D7-C676-BB66-DABF-FDC1E79D7EFA">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 03:20:30 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="monto_venta" id="133A7BC7-BF61-7E18-F715-BA0490EFFC6F">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 03:20:51 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cantidad_productos" id="8B7DCE76-194D-C935-3D12-378015AC9426">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 03:21:38 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut" id="815BCD4A-6365-8559-CAE8-963A330BD3DE">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-23 02:55:48 UTC</createdTime>
+<generatorID>3D4B7FFB-116C-A79B-DA1E-74D5794FA8B4</generatorID>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<referedAttribute>B95B9540-FE76-580D-A0A8-F9FBE6481CAE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut1" id="3FA017B9-E2A5-1F8A-5BBC-8D7571F8BB9F">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-23 03:01:51 UTC</createdTime>
+<generatorID>4C45B1B5-FFC5-4F02-B671-DB30C95B05FC</generatorID>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<referedAttribute>175D78F9-85D1-54D4-083E-C055511E6D16</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="59C53B45-5774-A488-F4B7-E6375C9C2D57" name="BOLETA PK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 03:20:27 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8DA3E116-1E90-8817-9AAE-08F0AA010FDD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

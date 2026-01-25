@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A559EB70-F1F2-4157-FBFC-982789652812" name="CONTRATO">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 03:06:11 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nro_contrato" id="85A74AC4-8BD9-0B41-2DBC-3AE0F8665371">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 03:06:17 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_contrato" id="5BC0A0B6-91CA-050D-FAEF-C6FF658181C1">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 03:06:47 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="832B68EB-ADD5-BA1A-D812-1117816BEBC0">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-23 02:42:10 UTC</createdTime>
+<generatorID>51D42FAF-1121-2425-E668-5B0390978CC7</generatorID>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<referedAttribute>538FEF0B-B377-76BD-F621-F730BA7ED7AB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="número_sucursal" id="9EA15FCA-6BC2-C4B5-0759-E4650E3E6877">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-23 02:42:10 UTC</createdTime>
+<generatorID>51D42FAF-1121-2425-E668-5B0390978CC7</generatorID>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<referedAttribute>59EB0D77-A54D-04A7-F145-A05A8E90351F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut" id="BD555356-9904-D8EC-DC20-81B1F39BCE68">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-23 02:52:51 UTC</createdTime>
+<generatorID>B0036D35-9AF6-C1FE-4F5E-23981F5E4905</generatorID>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<referedAttribute>B95B9540-FE76-580D-A0A8-F9FBE6481CAE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="507DCCB4-6B2B-F197-DB54-AF964D478A82" name="CONTRATO PK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-01-21 03:06:42 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<engineerTo>
+<item key="6270CB82-8902-539A-7522-7C96489C0675" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>85A74AC4-8BD9-0B41-2DBC-3AE0F8665371</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
