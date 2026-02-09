@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="STOCK_PRODUCTO" directorySegmentName="seg_0" id="73267162-5CF0-0A5D-0048-5FE4EDC0CC47">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 02:40:35 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>contiene</nameOnSource>
+<nameOnTarget>tiene</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0B319A90-AE8D-3D86-D2FD-78ADB56871CD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A1AE064F-3183-B57F-6783-C82A10AFC43D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

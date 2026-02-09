@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B256D6C6-DE88-CA27-DEC4-CF0AB2022B51" name="PRODUCTO">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>A1AE064F-3183-B57F-6783-C82A10AFC43D</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_producto" id="07A0D1A6-269C-F8C4-84B1-ACFD433A80C8">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>2AE320A3-610E-B448-DF99-830F8DF2C0B3</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_producto" id="EC139863-78B3-32D9-FEDA-ACC2EBE12714">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>14BADDC4-A152-1DA1-EB3C-54526EBD27CE</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="999B9251-B5EA-F66A-79C2-E736FF8F2E15">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>89F6FF5E-00A0-CABF-DF5F-8457D6BBB2EC</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_vencimiento" id="27F8F2D4-F947-470D-4AE3-DBAA08325A88">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>3B55611D-56E8-21B4-DA17-6F961EBA56DF</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_unitario" id="F492DFA8-59AF-D914-746E-4C1029B27D72">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>B5ADE324-3125-3155-82EB-C506B98CAEE5</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROVEEDOR_id_rut" id="30C57642-E457-9964-7904-40CCD79A735B">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>45A52B13-7FC3-164E-734D-FB28DDF6A530</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F721AEA-5624-8E84-8596-D2DA5B845FC3" referredColumn="E5C9DD68-2858-1F09-7B2E-494937EAF656"/>
+</associations>
+</Column>
+<Column name="STOCK_SUCURSAL_STOCK_SUCURSAL_ID" id="36A67101-0B79-BA72-365F-8A0A2A2CE942">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="653FD830-1C05-BD8C-7A5C-260C1EB0327F" referredColumn="D2439AA8-ADDD-9913-E09B-BEB33E3356E7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C43E0C2C-4A18-9E6B-CE79-D3C89F4A4625" name="PRODUCTO_PK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>54CCB87B-013D-AB40-6AD0-4D47B5C11CAC</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07A0D1A6-269C-F8C4-84B1-ACFD433A80C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9DD72D0B-2FA1-5C60-1049-6CFBBBE38CA8" name="PRODUCTO_PROVEEDOR_FK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>DF158221-6028-F789-0BDA-23F0A035C2C9</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30C57642-E457-9964-7904-40CCD79A735B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B518B6D9-55A8-925B-048B-646DDF80EEFC" name="PRODUCTO_STOCK_SUCURSAL_FK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>73267162-5CF0-0A5D-0048-5FE4EDC0CC47</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36A67101-0B79-BA72-365F-8A0A2A2CE942"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

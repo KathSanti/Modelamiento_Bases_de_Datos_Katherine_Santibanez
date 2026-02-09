@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E02C4A6C-BED1-9DA5-8082-489F892AFFB8" name="SUCURSAL">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>2E711620-033C-4E11-2042-B086BC3C8B67</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sigla_sucursal" id="2819A9CF-698C-9758-704A-07731920ABCB">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>5D2AFFF4-B4FE-2BD4-D4EB-CA89CD7B7FF3</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_sucursal" id="174A4044-2378-70FC-C1BC-5DFAF186D833">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>935EB1FC-3775-693C-0045-51941BDEF87D</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E5316C7-229B-9BEF-D267-68C92B1DA9DD" name="SUCURSAL_PK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>2AFABE7B-7046-52B5-1CFE-99C30A048E09</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2819A9CF-698C-9758-704A-07731920ABCB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

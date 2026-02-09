@@ -1,0 +1,316 @@
+-- Generado por Oracle SQL Developer Data Modeler 24.3.1.351.0831
+--   en:        2026-02-08 02:26:06 CLST
+--   sitio:      Oracle Database 11g
+--   tipo:      Oracle Database 11g
+
+
+
+-- predefined type, no DDL - MDSYS.SDO_GEOMETRY
+
+-- predefined type, no DDL - XMLTYPE
+
+CREATE TABLE BOLETA 
+    ( 
+     nro_boleta         INTEGER  NOT NULL , 
+     fecha_emision      DATE  NOT NULL , 
+     CLIENTE_id_cliente INTEGER  NOT NULL 
+    ) 
+;
+
+ALTER TABLE BOLETA 
+    ADD CONSTRAINT BOLETA_PK PRIMARY KEY ( nro_boleta ) ;
+
+CREATE TABLE CLIENTE 
+    ( 
+     id_cliente     INTEGER  NOT NULL , 
+     nombre_cliente VARCHAR2 (50)  NOT NULL , 
+     telefono       INTEGER  NOT NULL 
+    ) 
+;
+
+ALTER TABLE CLIENTE 
+    ADD CONSTRAINT CLIENTE_PK PRIMARY KEY ( id_cliente ) ;
+
+CREATE TABLE COMUNA 
+    ( 
+     id_comuna     INTEGER  NOT NULL , 
+     nombre_comuna VARCHAR2 (50)  NOT NULL 
+    ) 
+;
+
+ALTER TABLE COMUNA 
+    ADD CONSTRAINT COMUNA_CIUDAD_PK PRIMARY KEY ( id_comuna ) ;
+
+CREATE TABLE DETALLE_BOLETA 
+    ( 
+     cantidad             INTEGER  NOT NULL , 
+     BOLETA_nro_boleta    INTEGER  NOT NULL , 
+     PRODUCTO_id_producto VARCHAR2 (50)  NOT NULL 
+    ) 
+;
+
+CREATE TABLE DIRECCION 
+    ( 
+     id_direccion            INTEGER  NOT NULL , 
+     calle                   VARCHAR2 (50 CHAR)  NOT NULL , 
+     numero                  INTEGER , 
+     COMUNA_id_comuna        INTEGER  NOT NULL , 
+     SUCURSAL_sigla_sucursal VARCHAR2 (20)  NOT NULL , 
+     PROVEEDOR_id_rut        VARCHAR2 (20)  NOT NULL 
+    ) 
+;
+
+ALTER TABLE DIRECCION 
+    ADD CONSTRAINT DIRECCION_PK PRIMARY KEY ( id_direccion, COMUNA_id_comuna ) ;
+
+CREATE TABLE MARCA 
+    ( 
+     id_marca INTEGER  NOT NULL 
+    ) 
+;
+
+ALTER TABLE MARCA 
+    ADD CONSTRAINT MARCA_PK PRIMARY KEY ( id_marca ) ;
+
+CREATE TABLE MODELO_PRODUCTO 
+    ( 
+     MARCA_id_marca       INTEGER  NOT NULL , 
+     PRODUCTO_id_producto VARCHAR2 (50) 
+    ) 
+;
+
+CREATE TABLE PRODUCTO 
+    ( 
+     id_producto                      VARCHAR2 (50)  NOT NULL , 
+     nombre_producto                  VARCHAR2 (50)  NOT NULL , 
+     descripcion                      VARCHAR2 (200)  NOT NULL , 
+     fecha_vencimiento                DATE , 
+     valor_unitario                   INTEGER  NOT NULL , 
+     PROVEEDOR_id_rut                 VARCHAR2 (20)  NOT NULL , 
+--  ERROR: Column name length exceeds maximum allowed length(30) 
+     STOCK_SUCURSAL_STOCK_SUCURSAL_ID NUMBER  NOT NULL 
+    ) 
+;
+
+ALTER TABLE PRODUCTO 
+    ADD CONSTRAINT PRODUCTO_PK PRIMARY KEY ( id_producto ) ;
+
+CREATE TABLE PROVEEDOR 
+    ( 
+     id_rut            VARCHAR2 (20)  NOT NULL , 
+     nombre            VARCHAR2 (50)  NOT NULL , 
+     telefono          VARCHAR2 (10)  NOT NULL , 
+     email             VARCHAR2 (50)  NOT NULL , 
+     website           VARCHAR2 (50) , 
+     tipo_proveedor    VARCHAR2 (50)  NOT NULL , 
+     nombre_persona    VARCHAR2 (50) , 
+     apellidos_persona VARCHAR2 (50) , 
+     razon_social      VARCHAR2 (50) 
+    ) 
+;
+
+-- Error - Index PROVEEDOR__IDX has no columns
+
+ALTER TABLE PROVEEDOR 
+    ADD CONSTRAINT PROVEEDOR_PK PRIMARY KEY ( id_rut ) ;
+
+CREATE TABLE STOCK_SUCURSAL 
+    ( 
+     cantidad_Stock          INTEGER  NOT NULL , 
+     SUCURSAL_sigla_sucursal VARCHAR2 (20)  NOT NULL , 
+     STOCK_SUCURSAL_ID       NUMBER  NOT NULL 
+    ) 
+;
+
+ALTER TABLE STOCK_SUCURSAL 
+    ADD CONSTRAINT STOCK_SUCURSAL_PK PRIMARY KEY ( STOCK_SUCURSAL_ID ) ;
+
+CREATE TABLE SUCURSAL 
+    ( 
+     sigla_sucursal  VARCHAR2 (20)  NOT NULL , 
+     nombre_sucursal VARCHAR2 (50)  NOT NULL 
+    ) 
+;
+
+ALTER TABLE SUCURSAL 
+    ADD CONSTRAINT SUCURSAL_PK PRIMARY KEY ( sigla_sucursal ) ;
+
+ALTER TABLE BOLETA 
+    ADD CONSTRAINT BOLETA_CLIENTE_FK FOREIGN KEY 
+    ( 
+     CLIENTE_id_cliente
+    ) 
+    REFERENCES CLIENTE 
+    ( 
+     id_cliente
+    ) 
+;
+
+ALTER TABLE DETALLE_BOLETA 
+    ADD CONSTRAINT DETALLE_BOLETA_BOLETA_FK FOREIGN KEY 
+    ( 
+     BOLETA_nro_boleta
+    ) 
+    REFERENCES BOLETA 
+    ( 
+     nro_boleta
+    ) 
+;
+
+ALTER TABLE DETALLE_BOLETA 
+    ADD CONSTRAINT DETALLE_BOLETA_PRODUCTO_FK FOREIGN KEY 
+    ( 
+     PRODUCTO_id_producto
+    ) 
+    REFERENCES PRODUCTO 
+    ( 
+     id_producto
+    ) 
+;
+
+ALTER TABLE DIRECCION 
+    ADD CONSTRAINT DIRECCION_COMUNA_CIUDAD_FK FOREIGN KEY 
+    ( 
+     COMUNA_id_comuna
+    ) 
+    REFERENCES COMUNA 
+    ( 
+     id_comuna
+    ) 
+;
+
+ALTER TABLE DIRECCION 
+    ADD CONSTRAINT DIRECCION_PROVEEDOR_FK FOREIGN KEY 
+    ( 
+     PROVEEDOR_id_rut
+    ) 
+    REFERENCES PROVEEDOR 
+    ( 
+     id_rut
+    ) 
+;
+
+ALTER TABLE DIRECCION 
+    ADD CONSTRAINT DIRECCION_SUCURSAL_FK FOREIGN KEY 
+    ( 
+     SUCURSAL_sigla_sucursal
+    ) 
+    REFERENCES SUCURSAL 
+    ( 
+     sigla_sucursal
+    ) 
+;
+
+ALTER TABLE MODELO_PRODUCTO 
+    ADD CONSTRAINT MODELO_PRODUCTO_MARCA_FK FOREIGN KEY 
+    ( 
+     MARCA_id_marca
+    ) 
+    REFERENCES MARCA 
+    ( 
+     id_marca
+    ) 
+;
+
+ALTER TABLE MODELO_PRODUCTO 
+    ADD CONSTRAINT MODELO_PRODUCTO_PRODUCTO_FK FOREIGN KEY 
+    ( 
+     PRODUCTO_id_producto
+    ) 
+    REFERENCES PRODUCTO 
+    ( 
+     id_producto
+    ) 
+;
+
+ALTER TABLE PRODUCTO 
+    ADD CONSTRAINT PRODUCTO_PROVEEDOR_FK FOREIGN KEY 
+    ( 
+     PROVEEDOR_id_rut
+    ) 
+    REFERENCES PROVEEDOR 
+    ( 
+     id_rut
+    ) 
+;
+
+ALTER TABLE PRODUCTO 
+    ADD CONSTRAINT PRODUCTO_STOCK_SUCURSAL_FK FOREIGN KEY 
+    ( 
+     STOCK_SUCURSAL_STOCK_SUCURSAL_ID
+    ) 
+    REFERENCES STOCK_SUCURSAL 
+    ( 
+     STOCK_SUCURSAL_ID
+    ) 
+;
+
+ALTER TABLE STOCK_SUCURSAL 
+    ADD CONSTRAINT STOCK_SUCURSAL_SUCURSAL_FK FOREIGN KEY 
+    ( 
+     SUCURSAL_sigla_sucursal
+    ) 
+    REFERENCES SUCURSAL 
+    ( 
+     sigla_sucursal
+    ) 
+;
+
+CREATE SEQUENCE STOCK_SUCURSAL_STOCK_SUCURSAL_ 
+START WITH 1 
+    NOCACHE 
+    ORDER ;
+
+CREATE OR REPLACE TRIGGER STOCK_SUCURSAL_STOCK_SUCURSAL_ 
+BEFORE INSERT ON STOCK_SUCURSAL 
+FOR EACH ROW 
+WHEN (NEW.STOCK_SUCURSAL_ID IS NULL) 
+BEGIN 
+    :NEW.STOCK_SUCURSAL_ID := STOCK_SUCURSAL_STOCK_SUCURSAL_.NEXTVAL; 
+END;
+/
+
+
+
+-- Informe de Resumen de Oracle SQL Developer Data Modeler: 
+-- 
+-- CREATE TABLE                            11
+-- CREATE INDEX                             0
+-- ALTER TABLE                             20
+-- CREATE VIEW                              0
+-- ALTER VIEW                               0
+-- CREATE PACKAGE                           0
+-- CREATE PACKAGE BODY                      0
+-- CREATE PROCEDURE                         0
+-- CREATE FUNCTION                          0
+-- CREATE TRIGGER                           1
+-- ALTER TRIGGER                            0
+-- CREATE COLLECTION TYPE                   0
+-- CREATE STRUCTURED TYPE                   0
+-- CREATE STRUCTURED TYPE BODY              0
+-- CREATE CLUSTER                           0
+-- CREATE CONTEXT                           0
+-- CREATE DATABASE                          0
+-- CREATE DIMENSION                         0
+-- CREATE DIRECTORY                         0
+-- CREATE DISK GROUP                        0
+-- CREATE ROLE                              0
+-- CREATE ROLLBACK SEGMENT                  0
+-- CREATE SEQUENCE                          1
+-- CREATE MATERIALIZED VIEW                 0
+-- CREATE MATERIALIZED VIEW LOG             0
+-- CREATE SYNONYM                           0
+-- CREATE TABLESPACE                        0
+-- CREATE USER                              0
+-- 
+-- DROP TABLESPACE                          0
+-- DROP DATABASE                            0
+-- 
+-- REDACTION POLICY                         0
+-- 
+-- ORDS DROP SCHEMA                         0
+-- ORDS ENABLE SCHEMA                       0
+-- ORDS ENABLE OBJECT                       0
+-- 
+-- ERRORS                                   2
+-- WARNINGS                                 0

@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="72AE4AA8-2062-5E1C-9ADA-223D0FEB83D4" name="DETALLE_BOLETA">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-06 03:05:24 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cantidad" id="4871973F-2407-AEDC-1F9F-60F6439C498A">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-06 03:05:37 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nro_boleta" id="D5906D8F-DED4-B236-9C47-6BA412F48A77">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 02:56:25 UTC</createdTime>
+<generatorID>8668FC0F-4E61-65FF-F9DE-2740C5697C74</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<referedAttribute>6C50626E-4730-C713-54CD-AA31C09786F6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_producto" id="81D8627D-9C0E-CAD2-C816-ED01BEA318D9">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 02:57:10 UTC</createdTime>
+<generatorID>53D7E05C-4245-EEF7-5E49-73D7C32A0560</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<referedAttribute>2AE320A3-610E-B448-DF99-830F8DF2C0B3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

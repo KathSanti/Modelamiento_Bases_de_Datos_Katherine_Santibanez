@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0555343B-48C9-20AE-C99C-D43F9D1FD298" name="MARCA">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>275032C6-A903-2DFB-92E6-60F5A8EB188C</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_marca" id="5B6C2E58-E606-0E27-72F0-3DAAE83C6C35">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>E58881AE-E951-8555-DF87-3DE6C8CACD40</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7B110EAC-490E-0443-897D-1A1786689C76" name="MARCA_PK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>29C93EE4-C53F-169D-90D6-1D671768AAB5</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B6C2E58-E606-0E27-72F0-3DAAE83C6C35"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

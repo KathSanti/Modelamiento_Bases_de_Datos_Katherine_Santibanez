@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="275032C6-A903-2DFB-92E6-60F5A8EB188C" name="MARCA">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-06 02:56:04 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_marca" id="E58881AE-E951-8555-DF87-3DE6C8CACD40">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-06 02:56:25 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="29C93EE4-C53F-169D-90D6-1D671768AAB5" name="MARCA PK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-06 02:56:50 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E58881AE-E951-8555-DF87-3DE6C8CACD40</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2B44FB34-E814-E5B6-D902-CAA4560A7C42" name="PROVEEDOR">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>9ABD38D9-7370-1687-A532-ABC903BB7A5B</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_rut" id="E5C9DD68-2858-1F09-7B2E-494937EAF656">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>6AB7D745-9789-8ADB-CF7F-3D26E6851F4E</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="7AA9A7B1-3411-63A0-3974-9C7C985DC6B3">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>5E477F13-4BB2-B194-7734-ADC7A9673EB4</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="95ED9929-D03B-7E35-6D6E-70D0D0BFE94E">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>D48A9429-2B49-C198-F6AA-30CA4BE4614C</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="36FB698E-0C9F-0FD2-3AF8-4D779197A1DB">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>56C63BE9-3FFB-64F4-2A1A-7394FA90FE4B</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="website" id="8335B976-7CE7-0AE1-E645-51F734696FA9">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>6D541952-705B-DC87-0AF9-A652ACAC0622</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_proveedor" id="CEEA34C3-A82F-56F6-285E-825118DD412B">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 05:13:32 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_persona" id="0CDEB1AD-0D76-4E33-39E3-EC8A506A89CC">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 05:13:32 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellidos_persona" id="97A06A7A-E517-C3CF-6D5E-DDBCE2E4E832">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 05:13:32 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="razon_social" id="5633813F-2967-EDDC-C7F5-4B37618F4F48">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 05:13:32 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D160299B-1C7A-DD93-9609-71EE288D20E1" name="PROVEEDOR_PK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>BBF3A853-70D0-3628-CD51-91D439C38246</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5C9DD68-2858-1F09-7B2E-494937EAF656"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69C62427-0120-7B18-2782-997FB7F2426A" name="PROVEEDOR__IDX">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>C647EB50-D970-4FE4-D823-6F3E399C1EFD</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="E5C9DD68-2858-1F09-7B2E-494937EAF656"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

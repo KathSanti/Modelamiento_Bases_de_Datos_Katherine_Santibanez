@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EF5B5AC2-741E-50A6-CA93-28A481444A15" name="MODELO_PRODUCTO">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-06 02:55:46 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_marca" id="0CADCB0B-48F9-7849-FD67-418C2FE62163">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 02:43:16 UTC</createdTime>
+<generatorID>3D828AF4-F7BB-EBEC-8C90-1C33534DCABA</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<referedAttribute>E58881AE-E951-8555-DF87-3DE6C8CACD40</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_producto" id="C10BFA5F-62C6-2F7E-A789-BAB022E4C3F9">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 02:43:43 UTC</createdTime>
+<generatorID>7551DB5B-6E88-AE65-2DFA-19804469CCD9</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2AE320A3-610E-B448-DF99-830F8DF2C0B3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

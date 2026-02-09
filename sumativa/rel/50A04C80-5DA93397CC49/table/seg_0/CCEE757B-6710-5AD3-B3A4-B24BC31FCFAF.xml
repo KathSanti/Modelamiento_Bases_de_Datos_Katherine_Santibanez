@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CCEE757B-6710-5AD3-B3A4-B24BC31FCFAF" name="DIRECCION">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>90C9BD23-D1E0-673C-54CF-A2B3544BD374</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_direccion" id="4090E99B-6ACF-8D64-9FFB-58B840A02540">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>11AF486A-92CB-C81C-7635-1B36691F07B5</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="calle" id="48A5E51B-D7E7-4F00-68FE-CB605280F632">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>78A030CB-1B78-0FB8-DA6B-CCBCCC9DBF88</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero" id="293658F4-B0F1-888D-C3C0-B2DFD091DE6B">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>0AF4D859-CF01-2902-F478-1DF2B98DA667</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMUNA_id_comuna" id="E30ABCD5-7235-EE35-2FCA-2321BDCC72DB">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>879AF2EE-13E6-8452-BAE2-FB6FEE133702</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9807ADFC-8F35-9869-C637-BE058988D152" referredColumn="6738DCA2-4731-CC2C-9F3F-FD1618E039C0"/>
+</associations>
+</Column>
+<Column name="SUCURSAL_sigla_sucursal" id="6F384842-4D97-B1CB-C7E7-6AC048E2AAE2">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>F246F6D7-596F-C87B-E68D-F955F7226FD6</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BBE8B52B-E122-45C5-04B5-1E5AC466DCE6" referredColumn="2819A9CF-698C-9758-704A-07731920ABCB"/>
+</associations>
+</Column>
+<Column name="PROVEEDOR_id_rut" id="B7EFA3C0-7AE6-9426-ABE7-54D335A7D5F1">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>3D12380B-56E5-4D32-7F14-6604308277BE</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DFE21BAC-AD7B-DE80-8C68-169B38AD9C3F" referredColumn="E5C9DD68-2858-1F09-7B2E-494937EAF656"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A18E7B0D-CEE1-10F0-DBFF-130CC5C5B37C" name="DIRECCION_PK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>DBAD652E-9F61-B5E2-4B87-DE9C94EB439C</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4090E99B-6ACF-8D64-9FFB-58B840A02540"/>
+<colUsage columnID="E30ABCD5-7235-EE35-2FCA-2321BDCC72DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="202D0F20-F03E-06D6-73A0-2A947043141B" name="DIRECCION_SUCURSAL_FK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>2B7730C0-A736-F7C0-E791-A6EFBBC4B141</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F384842-4D97-B1CB-C7E7-6AC048E2AAE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0E79DCC-44A9-9BA3-979F-C3E98D57C2BD" name="DIRECCION_PROVEEDOR_FK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>6C8EBFBD-0F6C-8106-D88B-F63515B735E1</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7EFA3C0-7AE6-9426-ABE7-54D335A7D5F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28A9FE45-AA66-CF7B-2DE3-883EB1187644" name="DIRECCION_COMUNA_CIUDAD_FK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>E68F5FE7-A690-E32F-6BB9-1A27D18296BB</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E30ABCD5-7235-EE35-2FCA-2321BDCC72DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

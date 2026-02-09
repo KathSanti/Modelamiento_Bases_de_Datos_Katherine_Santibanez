@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D976927C-61E4-84CF-3E09-B481084CEB71" name="MODELO_PRODUCTO">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>EF5B5AC2-741E-50A6-CA93-28A481444A15</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MARCA_id_marca" id="00307E4A-8C4C-9D0F-C326-54F102D24306">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>0CADCB0B-48F9-7849-FD67-418C2FE62163</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0C2A1DF2-F824-CDFD-673B-9AE3336C6866" referredColumn="5B6C2E58-E606-0E27-72F0-3DAAE83C6C35"/>
+</associations>
+</Column>
+<Column name="PRODUCTO_id_producto" id="33817FFE-841C-5565-F117-E6B7858A8CFD">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>C10BFA5F-62C6-2F7E-A789-BAB022E4C3F9</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="99CC9D6A-3C0D-1391-5618-5C1F33F6B7DC" referredColumn="07A0D1A6-269C-F8C4-84B1-ACFD433A80C8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F1FBF96A-10F8-2569-65F8-EF14AEAB8F12" name="MODELO_PRODUCTO_PRODUCTO_FK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>7551DB5B-6E88-AE65-2DFA-19804469CCD9</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33817FFE-841C-5565-F117-E6B7858A8CFD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A781012A-B312-D398-A174-81D32E64861F" name="MODELO_PRODUCTO_MARCA_FK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>3D828AF4-F7BB-EBEC-8C90-1C33534DCABA</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00307E4A-8C4C-9D0F-C326-54F102D24306"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

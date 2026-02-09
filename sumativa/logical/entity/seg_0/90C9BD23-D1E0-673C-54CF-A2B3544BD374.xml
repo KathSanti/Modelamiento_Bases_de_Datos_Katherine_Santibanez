@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="90C9BD23-D1E0-673C-54CF-A2B3544BD374" name="DIRECCION">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-06 03:26:44 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_direccion" id="11AF486A-92CB-C81C-7635-1B36691F07B5">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-06 03:26:44 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<importedID>DEC4B7B9-EDCC-6F5C-3B00-66BF42E3A964</importedID>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="calle" id="78A030CB-1B78-0FB8-DA6B-CCBCCC9DBF88">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-06 03:26:44 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<importedID>BC5651DC-0D85-6646-1C6B-DCF3255660E2</importedID>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero" id="0AF4D859-CF01-2902-F478-1DF2B98DA667">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-06 03:26:44 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<importedID>B1299D80-2BD3-3FB9-BA28-9F540E185306</importedID>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_comuna" id="879AF2EE-13E6-8452-BAE2-FB6FEE133702">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-06 03:26:44 UTC</createdTime>
+<generatorID>E68F5FE7-A690-E32F-6BB9-1A27D18296BB</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<importedID>7B4AF0A4-0E84-EEA7-1FA4-89B2B73F5605</importedID>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<referedAttribute>A429B422-B769-440A-592D-32B2940337DE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sigla_sucursal" id="F246F6D7-596F-C87B-E68D-F955F7226FD6">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 02:49:04 UTC</createdTime>
+<generatorID>2B7730C0-A736-F7C0-E791-A6EFBBC4B141</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<referedAttribute>5D2AFFF4-B4FE-2BD4-D4EB-CA89CD7B7FF3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_rut" id="3D12380B-56E5-4D32-7F14-6604308277BE">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 02:50:35 UTC</createdTime>
+<generatorID>6C8EBFBD-0F6C-8106-D88B-F63515B735E1</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<referedAttribute>6AB7D745-9789-8ADB-CF7F-3D26E6851F4E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DBAD652E-9F61-B5E2-4B87-DE9C94EB439C" name="DIRECCION PK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-06 03:26:44 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>11AF486A-92CB-C81C-7635-1B36691F07B5</attributeRef>
+<attributeRef>879AF2EE-13E6-8452-BAE2-FB6FEE133702</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

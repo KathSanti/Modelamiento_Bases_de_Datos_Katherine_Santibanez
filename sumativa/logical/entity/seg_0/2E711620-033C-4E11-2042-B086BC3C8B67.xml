@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2E711620-033C-4E11-2042-B086BC3C8B67" name="SUCURSAL">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-06 02:47:05 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="sigla_sucursal" id="5D2AFFF4-B4FE-2BD4-D4EB-CA89CD7B7FF3">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-06 02:47:16 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_sucursal" id="935EB1FC-3775-693C-0045-51941BDEF87D">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-06 02:47:40 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2AFABE7B-7046-52B5-1CFE-99C30A048E09" name="SUCURSAL PK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-06 02:47:39 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5D2AFFF4-B4FE-2BD4-D4EB-CA89CD7B7FF3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

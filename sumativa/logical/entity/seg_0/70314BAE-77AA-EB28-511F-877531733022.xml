@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="70314BAE-77AA-EB28-511F-877531733022" name="COMUNA">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-06 03:26:45 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_comuna" id="A429B422-B769-440A-592D-32B2940337DE">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-06 03:26:45 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<importedID>D31CC75B-3500-5569-8A82-F76C3026CD8F</importedID>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_comuna_ciudad" id="E004C426-E94F-1902-EC77-E8E6F9F1A063">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-06 03:26:45 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<importedID>41964657-21E1-F460-A53B-9A365E7D3E20</importedID>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="64031D84-1CE3-7410-2C62-AAF032632B0F" name="COMUNA_CIUDAD PK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-06 03:26:45 UTC</createdTime>
+<ownerDesignName>sumativa</ownerDesignName>
+<engineerTo>
+<item key="50A04C80-019C-ED68-F867-5DA93397CC49" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A429B422-B769-440A-592D-32B2940337DE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

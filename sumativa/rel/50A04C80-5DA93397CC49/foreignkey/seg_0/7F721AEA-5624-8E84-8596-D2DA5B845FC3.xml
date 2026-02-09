@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7F721AEA-5624-8E84-8596-D2DA5B845FC3" containerWithKeyObject="B256D6C6-DE88-CA27-DEC4-CF0AB2022B51" localFKIndex="9DD72D0B-2FA1-5C60-1049-6CFBBBE38CA8" name="PRODUCTO_PROVEEDOR_FK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>DF158221-6028-F789-0BDA-23F0A035C2C9</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<referredTableLongName>PROVEEDOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2B44FB34-E814-E5B6-D902-CAA4560A7C42</referredTableID>
+<keyObject>D160299B-1C7A-DD93-9609-71EE288D20E1</keyObject>
+<referredKeyID>D160299B-1C7A-DD93-9609-71EE288D20E1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_rut</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

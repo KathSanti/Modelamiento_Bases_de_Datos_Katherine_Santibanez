@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="23CE09FB-A2DB-CD0B-55FC-F540E6662A5E" name="BOLETA">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:38 UTC</createdTime>
+<generatorID>5EFA63BD-4361-9781-063A-B382B6C6BB8F</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nro_boleta" id="DE46580E-BE33-C693-6AE8-B44E1B14A52B">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:38 UTC</createdTime>
+<generatorID>6C50626E-4730-C713-54CD-AA31C09786F6</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_emision" id="D2DB0CA5-4900-09D4-3F63-EB815655FC76">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:38 UTC</createdTime>
+<generatorID>838271D2-2294-4D26-D56E-895124F6B98A</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLIENTE_id_cliente" id="F634109E-DF68-6E13-E057-8F8F8E6E79DC">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:38 UTC</createdTime>
+<generatorID>E712674E-3C6D-410A-526A-93C5E66B2633</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9B9E8A55-4D73-AD3F-7E9B-B674327E315C" referredColumn="A3614878-BC92-0E3E-F7DF-A8359B0D6455"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E7921E37-5493-16CA-6F1E-4547F114CAA7" name="BOLETA_PK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:38 UTC</createdTime>
+<generatorID>E346BD80-6FC6-B021-5BAE-41C96AF82886</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE46580E-BE33-C693-6AE8-B44E1B14A52B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3494B2DE-2357-33E6-4BA6-1E7E3D395A4B" name="BOLETA_CLIENTE_FK">
+<createdBy>kathe</createdBy>
+<createdTime>2026-02-08 03:15:39 UTC</createdTime>
+<generatorID>07B9416A-94C8-97B4-D5C4-54F74715F497</generatorID>
+<ownerDesignName>sumativa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F634109E-DF68-6E13-E057-8F8F8E6E79DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
